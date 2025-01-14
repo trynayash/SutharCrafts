@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SutharCrafts - Experience the art of fine furniture craftsmanship.">
+    <meta name="keywords" content="furniture, premium furniture, home decor, living room, bedroom, dining, office">
+    <title>Contact Us | SutharCrafts</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('/static/images/image1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .formbold-main-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .formbold-form-wrapper {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .formbold-heading {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            color: #14213d; /* Primary color */
+            margin-bottom: 20px;
+        }
+
+        .formbold-form-input {
+            width: 100%;
+            padding: 14px 14px;
+            border-radius: 8px;
+            border: 1px solid #DDE3EC;
+            background-color: #ffffff; /* White background for inputs */
+            font-size: 16px;
+            color: #07074D;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .formbold-form-input:focus {
+            border-color: #fca311; /* Accent color */
+            box-shadow: 0 0 8px rgba(252, 163, 17, 0.3);
+        }
+
+        .formbold-btn {
+            width: 100%;
+            padding: 16px 30px;
+            border-radius: 8px;
+            border: none;
+            background: linear-gradient(90deg, #fca311, #e5e5e5); /* Gradient with accent colors */
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .formbold-btn:hover {
+            background: linear-gradient(90deg, #e5e5e5, #fca311); /* Reversed gradient on hover */
+            transform: scale(1.02);
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #07074D; /* Dark text for labels */
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: relative;
+            z-index: 100;
+        }
+
+        .navbar-nav {
+            margin-left: 0; /* Align navbar links to the left */
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-start; /* Align links to the left */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            padding: 0 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fca311 !important; /* Hover effect on nav items */
+        }
+
+        #mobile-nav {
+            display: none;
+            background: #ffffff; /* White background for the mobile nav */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #mobile-nav.show {
+            display: block;
+        }
+
+        #mobile-nav a {
+            display: block;
+            padding: 12px;
+            color: #14213d; /* Primary color */
+            text-decoration: none;
+        }
+
+        #mobile-nav a:hover {
+            background-color: #fca311; /* Hover with accent color */
+            color: white;
+        }
+
+        .navbar-brand img {
+            height: 30px; /* Reduced logo size */
+        }
+
+        /* For small screens, stack the navbar links vertically */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                display: block;
+                text-align: left;
+            }
+            .navbar-nav .nav-link {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <!-- Logo with a defined max height -->
+            <a href="https://imgbb.com/">
+                <img src="https://i.ibb.co/QjJPq5V/Sutharcrafts.png" alt="Sutharcrafts" class="navbar-logo">
+            </a>
+    
+            <!-- Hamburger menu button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        /* Make logo smaller */
+        .navbar-logo {
+            height: 40px; /* Adjust the height as needed */
+        }
+    
+        /* Ensure navbar items are aligned to the left */
+        .navbar-nav {
+            margin-left: 50;
+        }
+    
+        /* Optional: For mobile view, align navbar items to the left */
+        @media (max-width: 1000px) {
+            .navbar-nav {
+                text-align: left;
+            }
+        }
+    </style>
+    
+
+    <!-- Contact Form -->
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <form action="https://formbold.com/s/3Lqyb" method="POST">
+                <h2 class="formbold-heading">Contact Us</h2>
+
+                <div class="formbold-input-flex mb-3">
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="" class="formbold-form-input" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="" class="formbold-form-input" required>
+                    </div>
+                </div>
+
+                <div class="formbold-input-flex mb-3">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="" class="formbold-form-input" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="" class="formbold-form-input" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message">Message</label>
+                    <textarea rows="6" name="message" id="message" placeholder="Type your message" class="formbold-form-input" required></textarea>
+                </div>
+
+                <button type="submit" class="formbold-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>&copy; 2025 SutharCrafts | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
